@@ -113,7 +113,31 @@ The original analysis reported the following approximate coefficient interpretat
 ## Regression Diagnostics
 
 A major part of the project involved checking whether the final model satisfied the assumptions underlying Multiple Linear Regression.
+## Regression Diagnostic Visualisations
 
+### Correlation Analysis
+
+The correlation heatmap was used to examine relationships between the numerical variables and identify their potential contribution to the regression model.
+
+![Correlation Heatmap](screenshots/correlation-heatmap.png)
+
+### Residual Distribution
+
+The residual distribution was examined to assess whether the regression errors were approximately normally distributed.
+
+![Residual Distribution](screenshots/residual-distribution.png)
+
+### Residuals vs Fitted Values
+
+The residual-versus-fitted plot was used to assess constant error variance. The residuals were distributed around zero without a strong systematic pattern.
+
+![Residuals vs Fitted Values](screenshots/residuals-vs-fitted.png)
+
+### Q-Q Plot
+
+The Q-Q plot provides an additional diagnostic check of residual normality.
+
+![Q-Q Plot of Residuals](screenshots/qq-plot-residuals.png)
 ### Linearity
 
 Scatter plots and regression diagnostics were used to assess whether the numerical predictors had approximately linear relationships with the target.
@@ -196,7 +220,25 @@ To prepare the data for forecasting, the project applied:
 The ADF test was then reapplied after transformation to assess whether stationarity had been achieved.
 
 ---
+## Time Series Visualisations
 
+### Log Transformation
+
+A logarithmic transformation was applied as part of the preparation of the non-stationary time series.
+
+![Log-Transformed Time Series](screenshots/log-transformed-time-series.png)
+
+### Differencing
+
+Differencing was subsequently applied to reduce trend and obtain a more stationary series suitable for statistical forecasting.
+
+![Differenced Time Series](screenshots/differenced-time-series.png)
+
+### Forecast Evaluation
+
+The final forecast was compared visually with the actual test observations to assess forecasting performance.
+
+![Actual vs Forecast](screenshots/actual-vs-forecast-sarima.png)
 ## ARIMA
 
 **ARIMA (AutoRegressive Integrated Moving Average)** was used as one of the main forecasting approaches.
